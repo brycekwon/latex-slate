@@ -1,0 +1,206 @@
+\documentclass{slate-resume}
+
+\begin{document}
+
+\slatemeta{John Doe CV}{John Doe}{Curriculum Vitae}{robotics, perception, legged locomotion}
+\slateheader{John Doe}{1-555-000-0000\sep\href{mailto:john@example.com}{john@example.com}}{\href{https://www.example.com}{www.example.com}}
+
+\section{Research Interests}
+\begin{entryblock}
+Legged robot locomotion, real-time perception and sensor fusion, autonomous navigation in unstructured environments, 3D scene understanding, and energy-efficient motion planning for mobile robotic systems.
+\end{entryblock}
+
+\section{Education}
+\begin{entryblock}
+\educationentry{Doctor of Philosophy, Robotics \textup{(in progress)}}{Aug 2026 - Present}{Carnegie Mellon University, Robotics Institute}
+Advisor: Prof. Jane Smith. Dissertation: \textit{Adaptive Perception and Locomotion for Legged Robots in Unstructured Terrain.}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\educationentry{Master of Science, Robotics}{Aug 2024 - May 2026}{Carnegie Mellon University, School of Computer Science}
+GPA: 4.0/4.0. Thesis: \textit{Real-Time Semantic Segmentation for Legged Robot Navigation.}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\educationentry{Bachelor of Science, Mechanical Engineering}{Aug 2020 - May 2024}{Georgia Institute of Technology, College of Engineering}
+GPA: 3.92/4.0. Minor in Computer Science. Graduated with Highest Honors.
+\end{entryblock}
+
+\section{Research Experience}
+\begin{entryblock}
+\experienceentry{Graduate Research Assistant}{CMU Robotics Institute}{Pittsburgh, PA}{Aug 2024 - Present}
+\begin{itemize}
+  \item Developing a unified perception framework for legged robots that fuses LiDAR, stereo vision, and tactile sensing to estimate terrain deformability and adapt gait parameters in real time.
+  \item Designing hierarchical reinforcement learning policies for quadruped locomotion on granular and deformable surfaces, demonstrating 40\% reduction in energy expenditure versus baseline gaits.
+  \item Co-supervising two MS students on subprojects related to multi-modal sensor calibration and online terrain classification.
+  \item Maintaining lab compute infrastructure across a 12-node GPU cluster, including Slurm scheduling and experiment reproducibility tooling.
+\end{itemize}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\experienceentry{Undergraduate Research Assistant}{Georgia Tech LIDAR Lab}{Atlanta, GA}{Jan 2023 - May 2024}
+\begin{itemize}
+  \item Built a custom dataset of 12,000 annotated point clouds for outdoor scene segmentation, establishing a benchmark adopted by three partnering institutions.
+  \item Trained transformer-based 3D object detection models on multi-GPU clusters, achieving a 7\% improvement in mean average precision over baseline architectures.
+  \item Authored internal documentation and reproducible training scripts used by 15 lab members across two research groups, standardizing experiment tracking with Weights \& Biases.
+  \item Presented research progress at two internal lab symposia and one departmental poster session attended by faculty and industry sponsors.
+\end{itemize}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\experienceentry{Research Intern}{MIT CSAIL}{Cambridge, MA}{May 2023 - Aug 2023}
+\begin{itemize}
+  \item Investigated sim-to-real transfer strategies for contact-rich manipulation tasks, reducing the policy performance gap between simulation and physical hardware from 31\% to 9\%.
+  \item Implemented domain randomization pipelines in Isaac Gym, parameterizing friction, mass, and actuator delay distributions across 200 randomized environment configurations.
+  \item Contributed to an open-source benchmarking suite for dexterous manipulation policies, subsequently used in three published comparisons.
+\end{itemize}
+\end{entryblock}
+
+\section{Industry Experience}
+\begin{entryblock}
+\experienceentry{Robotics Software Engineer Intern}{Boston Dynamics}{Waltham, MA}{May 2025 - Aug 2025}
+\begin{itemize}
+  \item Implemented real-time obstacle avoidance algorithms for quadruped locomotion across uneven terrain, reducing collision events by 34\% during field trials in warehouse environments.
+  \item Designed a ROS2-based sensor fusion pipeline integrating LiDAR, stereo vision, and IMU data to improve localization accuracy from 15cm to under 3cm drift per kilometer.
+  \item Wrote comprehensive unit and integration tests for the perception stack, increasing code coverage from 52\% to 89\% and catching three critical race conditions before deployment.
+\end{itemize}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\experienceentry{Mechatronics Engineering Intern}{Rivian}{Normal, IL}{May 2022 - Aug 2022}
+\begin{itemize}
+  \item Developed automated calibration routines for battery management system sensors across 40 pre-production vehicles, reducing manual calibration time from 6 hours to 45 minutes per unit.
+  \item Built a Python-based diagnostic dashboard that aggregated CAN bus telemetry in real time, enabling technicians to identify faulty modules 60\% faster during assembly line audits.
+  \item Collaborated with the thermal management team to validate coolant flow sensor readings against simulation models, identifying a systematic 4\% bias that led to a revised sensor placement strategy.
+\end{itemize}
+\end{entryblock}
+
+\section{Publications}
+
+\textit{* denotes equal contribution.}
+
+\begin{entryblock}
+\publicationentry{\underline{John Doe}, Marcus Rivera, Priya Chandrasekaran}{Real-Time Semantic Segmentation of Unstructured Terrain for Legged Robot Navigation}{IEEE International Conference on Robotics and Automation (ICRA), 2026}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\publicationentry{Priya Chandrasekaran, \underline{John Doe}, Wei Zhang}{Lightweight Transformer Architectures for On-Device 3D Object Detection}{Under review at IEEE Robotics and Automation Letters (RA-L), 2026}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\publicationentry{Marcus Rivera, Wei Zhang, \underline{John Doe}}{A Comparative Study of Visual Odometry Methods for GPS-Denied Quadruped Locomotion}{Submitted to Conference on Robot Learning (CoRL), 2026}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\publicationentry{Wei Zhang, \underline{John Doe}, Priya Chandrasekaran, Sarah Kim}{Adaptive Gait Generation for Legged Robots Using Reinforcement Learning on Deformable Surfaces}{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\publicationentry{\underline{John Doe}, Wei Zhang}{Multi-Resolution Point Cloud Registration for Large-Scale Outdoor Mapping}{Submitted to Robotics and Autonomous Systems, 2026}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\publicationentry{Sarah Kim, Marcus Rivera, \underline{John Doe}, Priya Chandrasekaran}{Energy-Efficient Motion Planning for Battery-Constrained Mobile Robots in Dynamic Environments}{IEEE Transactions on Robotics (T-RO), 2025}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\publicationentry{\underline{John Doe}, Sarah Kim}{Terrain-Aware Foothold Planning for Quadrupeds Using Sparse Depth Estimation}{Workshop on Legged Robots, ICRA, 2025}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\publicationentry{Marcus Rivera, \underline{John Doe}}{Online Extrinsic Calibration Between LiDAR and Stereo Camera for Mobile Robots}{IEEE Sensors Letters, 2024}
+\end{entryblock}
+
+\section{Projects}
+\begin{entryblock}
+\projectentry{Atlas}{Autonomous drone navigation system with visual SLAM.}{C++, Python}
+\begin{itemize}
+  \item Engineered a monocular visual SLAM pipeline capable of mapping indoor environments at 30fps on embedded NVIDIA Jetson hardware with sub-5cm positional error.
+  \item Integrated a lightweight path planner that dynamically reroutes around newly detected obstacles within 200ms, tested across 50 unique indoor floorplans.
+\end{itemize}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\projectentry{Forge}{Custom 3D printing slicer optimized for multi-material extrusion.}{Rust}
+\begin{itemize}
+  \item Developed a parallel slicing engine that processes complex multi-body STL files 3$\times$ faster than conventional open-source alternatives while maintaining sub-layer accuracy.
+  \item Implemented automatic support structure generation using voxel-based overhang detection, reducing failed prints by 22\% across a test suite of 200 models.
+\end{itemize}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\projectentry{Pulse}{Wearable biometric dashboard with real-time anomaly detection.}{Go, TypeScript}
+\begin{itemize}
+  \item Built a streaming data pipeline ingesting heart rate, SpO2, and accelerometer data from BLE devices, surfacing anomalies via a responsive web dashboard within 500ms.
+  \item Designed a rolling-window statistical model that flags irregular cardiac rhythms with 91\% sensitivity, validated against 4,000 annotated sessions.
+\end{itemize}
+\end{entryblock}
+
+\section{Teaching}
+\begin{entryblock}
+\experienceentry{Teaching Assistant, 16-833 Robot Localization and Mapping}{CMU}{Pittsburgh, PA}{Spring 2025}
+\begin{itemize}
+  \item Held weekly office hours for a 60-student graduate course covering SLAM, particle filters, and graph-based optimization.
+  \item Designed two new programming assignments on factor graph SLAM and LiDAR odometry, now part of the permanent course curriculum.
+\end{itemize}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\experienceentry{Teaching Assistant, ME 2110 Creative Decisions and Design}{Georgia Tech}{Atlanta, GA}{Fall 2023}
+\begin{itemize}
+  \item Mentored eight student teams in a semester-long mechatronics design competition, providing guidance on mechanical design, embedded systems, and control.
+  \item Evaluated weekly milestone reports and gave structured feedback to improve technical writing and presentation skills.
+\end{itemize}
+\end{entryblock}
+
+\section{Honors \& Awards}
+\begin{entryblock}
+\educationentry{NSF Graduate Research Fellowship}{2024 - 2027}{National Science Foundation}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\educationentry{Best Paper Award, Legged Robots Workshop}{ICRA 2025}{IEEE Robotics and Automation Society}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\educationentry{President's Undergraduate Research Award}{Spring 2023}{Georgia Institute of Technology}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\educationentry{Dean's List}{2020 - 2024}{Georgia Institute of Technology}
+\end{entryblock}
+
+\section{Talks \& Presentations}
+\begin{entryblock}
+\publicationentry{\underline{John Doe}}{Real-Time Terrain Segmentation for Legged Robots}{Invited talk, CMU RI Seminar Series, November 2025}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\publicationentry{\underline{John Doe}, Marcus Rivera}{Visual Odometry for GPS-Denied Environments}{Poster, Georgia Tech Research Symposium, April 2024}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\publicationentry{\underline{John Doe}}{Sim-to-Real Transfer for Contact-Rich Manipulation}{Lightning talk, MIT CSAIL Student Symposium, August 2023}
+\end{entryblock}
+
+\section{Professional Service}
+\begin{entryblock}
+\textbf{Reviewer:} IEEE Transactions on Robotics (T-RO), IEEE RA-L, ICRA 2025, IROS 2025, CoRL 2025\\
+\textbf{Student Volunteer:} ICRA 2025, IROS 2024\\
+\textbf{Member:} IEEE Robotics and Automation Society, ACM
+\end{entryblock}
+
+\section{Technical Skills}
+\begin{entryblock}
+\skillentry{Languages}{Python, C++, Rust, Go, TypeScript, MATLAB, SQL, Bash, \LaTeX}
+\skillentry{Frameworks}{ROS2, PyTorch, TensorFlow, OpenCV, Isaac Gym, React, Docker, Kubernetes}
+\skillentry{Hardware}{NVIDIA Jetson, Raspberry Pi, Arduino, STM32, ZED Stereo Camera, Velodyne LiDAR}
+\skillentry{Tools}{Git, Weights \& Biases, Slurm, CMake, GDB, Valgrind}
+\end{entryblock}
+
+\section{References}
+\begin{entryblock}
+Available upon request.
+\end{entryblock}
+
+\end{document}

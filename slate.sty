@@ -1,0 +1,75 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{slate}[2026/04/17 Shared styling for slate classes]
+
+\@ifundefined{slate@defaultfontfalse}{%
+  \newif\ifslate@defaultfont
+  \slate@defaultfonttrue
+}{}
+\@ifundefined{slate@colorlinksfalse}{%
+  \newif\ifslate@colorlinks
+  \slate@colorlinkstrue
+}{}
+
+\RequirePackage[margin=0.5in]{geometry}
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\RequirePackage{enumitem}
+\RequirePackage{titlesec}
+\RequirePackage{needspace}
+
+\ifslate@defaultfont
+  \@ifpackageloaded{fontenc}{}{\RequirePackage[T1]{fontenc}}
+  \@ifpackageloaded{newtxtext}{}{\RequirePackage{newtxtext,newtxmath}}
+\fi
+
+\RequirePackage{microtype}
+\RequirePackage[bookmarksopen=true]{hyperref}
+
+\definecolor{slatetext}{HTML}{000000}
+\definecolor{slateheading}{HTML}{000000}
+\definecolor{slaterule}{HTML}{000000}
+\definecolor{slatelink}{HTML}{000000}
+
+\AtBeginDocument{\color{slatetext}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\linespread{1.08}
+\urlstyle{same}
+
+\ifslate@colorlinks
+  \hypersetup{%
+    colorlinks=true,%
+    urlcolor=slatelink,%
+    linkcolor=slatelink,%
+    citecolor=slatelink%
+  }
+\else
+  \hypersetup{%
+    colorlinks=false,%
+    pdfborder={0 0 0}%
+  }
+\fi
+
+\newcommand*{\sep}{%
+  \hspace{4pt}\raisebox{2pt}{\tikz\fill circle (1.2pt);}\hspace{4pt}%
+}
+
+\newcommand*{\slatemeta}[4]{%
+  \hypersetup{%
+    pdftitle={#1},%
+    pdfauthor={#2},%
+    pdfsubject={#3},%
+    pdfkeywords={#4}%
+  }%
+}
+
+\newcommand*{\slateheader}[3]{%
+  \begin{center}%
+    {\Large\bfseries\color{slateheading}#1}\\[2pt]%
+    \small#2\sep#3%
+  \end{center}%
+  \vspace{-15pt}%
+}
+
+\endinput

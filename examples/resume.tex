@@ -1,0 +1,72 @@
+\documentclass{slate-resume}
+
+\begin{document}
+
+\slatemeta{John Doe Resume}{John Doe}{Resume}{robotics, software engineering}
+\slateheader{John Doe}{1-555-000-0000\sep\href{mailto:john@example.com}{john@example.com}}{\href{https://www.example.com}{www.example.com}}
+
+\section{Education}
+\begin{entryblock}
+\educationentry{Master of Science, Robotics}{Aug 2024 - May 2026}{Carnegie Mellon University, School of Computer Science}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\educationentry{Bachelor of Science, Mechanical Engineering}{Aug 2020 - May 2024}{Georgia Institute of Technology, College of Engineering}
+\end{entryblock}
+
+\section{Relevant Experience}
+\begin{entryblock}
+\experienceentry{Robotics Software Engineer Intern}{Boston Dynamics}{Waltham, MA}{May 2025 - Aug 2025}
+\begin{itemize}
+  \item Implemented real-time obstacle avoidance algorithms for quadruped locomotion across uneven terrain, reducing collision events by 34\% during field trials in warehouse environments.
+  \item Designed a ROS2-based sensor fusion pipeline integrating LiDAR, stereo vision, and IMU data to improve localization accuracy from 15cm to under 3cm drift per kilometer.
+  \item Wrote comprehensive unit and integration tests for the perception stack, increasing code coverage from 52\% to 89\% and catching three critical race conditions before deployment.
+  \item Presented weekly progress reports to a cross-functional team of 20, translating technical findings into actionable insights for the hardware and controls groups.
+\end{itemize}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\experienceentry{Undergraduate Research Assistant}{Georgia Tech LIDAR Lab}{Atlanta, GA}{Jan 2023 - May 2024}
+\begin{itemize}
+  \item Built a custom dataset of 12,000 annotated point clouds for outdoor scene segmentation, establishing a benchmark adopted by three partnering institutions.
+  \item Trained transformer-based 3D object detection models on multi-GPU clusters, achieving a 7\% improvement in mean average precision over baseline architectures.
+  \item Authored internal documentation and reproducible training scripts used by 15 lab members across two research groups, standardizing experiment tracking with Weights and Biases.
+\end{itemize}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\experienceentry{Autonomous Systems Intern}{Waymo}{Mountain View, CA}{May 2021 - Aug 2021}
+\begin{itemize}
+  \item Prototyped a lane-change prediction model using LSTM networks trained on 500 hours of highway driving data, improving prediction horizon accuracy by 18\% over the existing baseline.
+  \item Automated nightly regression testing for the perception pipeline using Python and Bazel, cutting manual QA time by 3 hours per day across the team.
+\end{itemize}
+\end{entryblock}
+
+
+\section{Notable Projects}
+\begin{entryblock}
+\projectentry{Atlas}{Autonomous drone navigation system with visual SLAM.}{C++, Python}
+\begin{itemize}
+  \item Engineered a monocular visual SLAM pipeline capable of mapping indoor environments at 30fps on embedded NVIDIA Jetson hardware with sub-5cm positional error.
+  \item Integrated a lightweight path planner that dynamically reroutes around newly detected obstacles within 200ms, tested across 50 unique indoor floorplans.
+\end{itemize}
+\end{entryblock}
+\entrygap
+\begin{entryblock}
+\projectentry{Forge}{Custom 3D printing slicer optimized for multi-material extrusion.}{Rust}
+\begin{itemize}
+  \item Developed a parallel slicing engine that processes complex multi-body STL files 3x faster than conventional open-source alternatives while maintaining sub-layer accuracy.
+  \item Implemented automatic support structure generation using voxel-based overhang detection, reducing failed prints by 22\% across a test suite of 200 models.
+\end{itemize}
+\end{entryblock}
+
+
+
+\section{Technical Skills}
+\begin{entryblock}
+\skillentry{Languages}{Python, C++, Rust, Go, TypeScript, MATLAB, SQL, Bash, \LaTeX}
+\skillentry{Frameworks}{ROS2, PyTorch, TensorFlow, OpenCV, React, Docker, Kubernetes}
+\skillentry{Hardware}{NVIDIA Jetson, Raspberry Pi, Arduino, STM32, ZED Stereo Camera, Velodyne LiDAR}
+\end{entryblock}
+
+\end{document}
