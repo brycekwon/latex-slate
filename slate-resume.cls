@@ -20,7 +20,7 @@
 \titleformat{\section}%
   {\Large\bfseries\scshape\color{slateheading}}%
   {}{0pt}{}%
-  [\vspace{-15pt}{\color{slaterule}\rule{\textwidth}{0.75pt}}]
+  [\vspace{-15pt}\color{slaterule}\rule{\textwidth}{0.75pt}]
 \titlespacing*{\section}{0pt}{5pt}{5pt}
 
 \let\slate@oldsection\section
@@ -34,7 +34,7 @@
 
 \newenvironment{entryblock}%
   {\needspace{3\baselineskip}\begin{minipage}[t]{\textwidth}}%
-  {\end{minipage}\par}
+  {\end{minipage}\par\vspace{0.3\baselineskip}}
 
 \newcommand*{\educationentry}[3]{\textbf{#1}\hfill{#2}\par\textit{#3}\par}
 \newcommand*{\experienceentry}[4]{\textbf{#1}\sep{#2}\sep{#3}\hfill{#4}}
