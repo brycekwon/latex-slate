@@ -21,7 +21,9 @@
   \@ifpackageloaded{fontenc}{}{\RequirePackage[T1]{fontenc}}
   \@ifpackageloaded{newtxtext}{}{\RequirePackage{newtxtext,newtxmath}}
 \fi
+\defaultfontfeatures+{Ligatures=NoCommon}
 
+\RequirePackage[none]{hyphenat}
 \RequirePackage{microtype}
 \RequirePackage[bookmarksopen=true]{hyperref}
 
