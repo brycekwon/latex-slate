@@ -157,6 +157,12 @@ To adjust margins, call `\geometry` in the preamble:
 \geometry{margin=0.75in}
 ```
 
+## Contributions
+
+You may email patches, issues, security reports, or pull requests to [code@brycekwon.com](mailto:code@brycekwon.com). I do not use issue trackers or source forges (GitHub, GitLab, etc.) as a personal preference.
+
+Contributions of any kind are welcome. Patches and pull requests will be credited with proper authorship unless you request otherwise. Bug reports and vulnerability disclosures will be credited via the `Reported-by` commit trailer unless you request otherwise. Significant changes may be adjusted, deferred, or declined to keep the project aligned with its goals.
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE.txt).
