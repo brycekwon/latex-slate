@@ -25,7 +25,8 @@
 
 \RequirePackage[none]{hyphenat}
 \RequirePackage{microtype}
-\RequirePackage[bookmarksopen=false]{hyperref}
+% \RequirePackage[bookmarksopen=false]{hyperref}
+\RequirePackage[bookmarksopen=false,pdfpagemode=UseNone]{hyperref}
 
 \definecolor{slatetext}{HTML}{000000}
 \definecolor{slateheading}{HTML}{000000}
@@ -62,8 +63,7 @@
     pdftitle={#1},%
     pdfauthor={#2},%
     pdfsubject={#3},%
-    pdfkeywords={#4},%
-    pdfpagemode=UseNone%
+    pdfkeywords={#4}%
   }%
 }
 
