@@ -15,9 +15,8 @@
 
 \LoadClass{article}
 
+\PassOptionsToPackage{margin=1in}{geometry}
 \RequirePackage{slate}
-
-\geometry{margin=1in}
 
 \setlength{\parskip}{10pt plus 2pt minus 2pt}
 \setlength{\parindent}{0pt}
